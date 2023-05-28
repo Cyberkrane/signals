@@ -1,0 +1,21 @@
+<section>
+    <article>
+      <div class="column">
+        <label for="palabras">Eu quero traduzir esta palavra:</label>
+        <input type="text" [(ngModel)]="consulta" #palabras autofocus />
+        <button class="btn btn-green" (click)="traducir(palabras.value)">
+            traduzir
+        </button>
+        <button class="btn btn-red" (click)="reset()">reset</button>
+      </div>
+      
+    </article>
+
+    <article>
+      <div *ngFor="let letra of laPalabra">
+        <div class="letra">
+          <img src="{{ letra }}" alt="" />
+        </div>
+      </div>
+    </article>
+  </section>

@@ -3,6 +3,7 @@ body {
   background-color: rgba(44, 42, 42, 0.89);
 }
 main {
+  width: 100%;
   background-color: rgba(44, 42, 42, 0.89);
   padding: 30px 10px;
   display: flex;
@@ -21,11 +22,10 @@ header {
 section {
   width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
 }
 article {
-  width: 45%;
+  width: 100%;
   height: 80vh;
   margin: auto 20px;
   padding: 10px;
@@ -58,7 +58,9 @@ img {
 .letra {
   width: 5vw;
 }
-
+.btn-container{
+  display: flex;
+}
 .btn {
   background-color: rgba(110, 109, 109, 0.514);
   color: aliceblue;
@@ -70,6 +72,23 @@ img {
   box-shadow: inset 0 0 5px rgba(41, 40, 40, 0.897),
     2px 2px 5px rgba(14, 12, 12, 0.925);
 }
+
+.btn-country{
+  width: 3vw;
+  height: 6vh;
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.argentina{
+  background-image: url("./assets/flags/argentina.png");
+}
+.brasil{
+  background-image: url("./assets/flags/brasil.png");
+}
+
+.btn-country,
 .btn:hover {
   box-shadow: inset 0 0 5px rgba(161, 160, 160, 0.897),
     2px 2px 5px rgba(12, 11, 11, 0.952);
