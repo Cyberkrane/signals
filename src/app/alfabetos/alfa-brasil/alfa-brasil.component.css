@@ -1,0 +1,15 @@
+.alfabeto{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+li{
+    width: 7vw;
+    margin: 5px;
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}

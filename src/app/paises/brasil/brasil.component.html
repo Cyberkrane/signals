@@ -3,10 +3,10 @@
       <div class="column">
         <label for="palabras">Eu quero traduzir esta palavra:</label>
         <input type="text" [(ngModel)]="consulta" #palabras autofocus />
-        <button class="btn btn-green" (click)="traducir(palabras.value)">
+        <button class="btn btn-success" (click)="traducir(palabras.value)">
             traduzir
         </button>
-        <button class="btn btn-red" (click)="reset()">reset</button>
+        <button class="btn btn-danger" (click)="reset()">reset</button>
       </div>
       
     </article>

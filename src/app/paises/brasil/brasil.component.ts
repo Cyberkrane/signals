@@ -12,8 +12,6 @@ export class BrasilComponent {
   consulta?: string;
   
   constructor(public idiomasService: IdiomasService) {}
-
-  elegirPais(){}
   
   traducir(value: string): string[] {
     const unaLetra = value.toLowerCase();
