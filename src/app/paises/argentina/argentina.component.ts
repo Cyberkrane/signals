@@ -7,8 +7,15 @@ import { IdiomasService } from 'src/app/services/idiomas.service';
   styleUrls: ['./argentina.component.css']
 })
 export class ArgentinaComponent {
+
+  title: string = 'Quiero traducir esta palabra:';
+  translate: string = 'traducir';
+  clean: string = 'borrar';
+
   laPalabra: string[] = [];
+  
   argentina = this.idiomasService.argentina;
+  
   consulta?: string;
   
   constructor(public idiomasService: IdiomasService) {}

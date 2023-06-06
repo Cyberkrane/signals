@@ -7,6 +7,11 @@ import { IdiomasService } from 'src/app/services/idiomas.service';
   styleUrls: ['./brasil.component.css']
 })
 export class BrasilComponent {
+
+  title = 'Eu quero traduzir esta palavra:';
+  translate: string = 'traduzir';
+  clean: string = 'excluir';
+
   laPalabra: string[] = [];
   brasil = this.idiomasService.brasil;
   consulta?: string;

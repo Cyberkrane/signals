@@ -37,7 +37,7 @@ export class IdiomasService {
     'x': `../assets/abc argentina/x.png`,
     'y': `../assets/abc argentina/y.png`,
     'z': `../assets/abc argentina/z.png`,
-    ' ': `../assets/alfabeto brasilero/espacio.png`,
+    ' ': `../assets/abc argentina/espacio.png`,
   }
 
   alfaArgentina: string[] = [

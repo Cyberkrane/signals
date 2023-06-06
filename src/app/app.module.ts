@@ -1,30 +1,32 @@
+//modulos angular
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import { ArgentinaComponent } from './paises/argentina/argentina.component';
-import { BrasilComponent } from './paises/brasil/brasil.component';
+
+//componentes angular
+import { AppComponent } from './app.component';
+
+//mis modulos
 import { SharedModule } from './shared/shared.module';
-import { AlfaArgentinaComponent } from './alfabetos/alfa-argentina/alfa-argentina.component';
-import { AlfaBrasilComponent } from './alfabetos/alfa-brasil/alfa-brasil.component';
-import { AlfabetoComponent } from './alfabetos/alfabeto/alfabeto.component';
+import { PaisesModule } from './paises/paises.module';
+import { AlfabetoModule } from './alfabetos/alfabeto.module';
+
+//mis componentes
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ArgentinaComponent,
-    BrasilComponent,
-    AlfaArgentinaComponent,
-    AlfaBrasilComponent,
-    AlfabetoComponent
+    HomeComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    SharedModule
+    SharedModule,
+    PaisesModule,
+    AlfabetoModule
   ],
   providers: [],
   bootstrap: [AppComponent]
