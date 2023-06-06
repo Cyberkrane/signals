@@ -4,9 +4,11 @@ import { ArgentinaComponent } from './paises/argentina/argentina.component';
 import { BrasilComponent } from './paises/brasil/brasil.component';
 import { AlfaArgentinaComponent } from './alfabetos/alfa-argentina/alfa-argentina.component';
 import { AlfaBrasilComponent } from './alfabetos/alfa-brasil/alfa-brasil.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/argentina', pathMatch: 'full' },
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'argentina', component: ArgentinaComponent },
   { path: 'brasil', component: BrasilComponent },
   { path: 'alfa-argentina', component: AlfaArgentinaComponent },

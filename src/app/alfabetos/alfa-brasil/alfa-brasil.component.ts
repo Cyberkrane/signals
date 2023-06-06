@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { Idioma } from 'src/app/interfaces/idioma';
 import { IdiomasService } from 'src/app/services/idiomas.service';
 
 @Component({
@@ -14,7 +13,5 @@ export class AlfaBrasilComponent {
   constructor(private alfaBrasilService: IdiomasService) { }
 
   alfabeto: string[] = this.alfaBrasilService.alfaBrasil;
-
-  
 
 }
