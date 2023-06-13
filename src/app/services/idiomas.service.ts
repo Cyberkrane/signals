@@ -130,5 +130,8 @@ export class IdiomasService {
     `../assets/alfabeto brasilero/z.png`
   ]
 
+ getLetras(): Idioma {
+   return this.argentina;
+ }
 
 }
